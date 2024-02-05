@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:io';
-import 'package:e_commerce/utilites/widgets/showdialog.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:quizapp/utilites/widgets/showdialog.dart';
 
 class CallApi {
   static String msg = '';

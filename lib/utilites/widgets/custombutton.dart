@@ -1,6 +1,5 @@
-import 'package:e_commerce/utilites/appcolors.dart';
-
 import 'package:flutter/material.dart';
+import 'package:quizapp/utilites/appcolors.dart';
 
 class CustomButton extends StatelessWidget {
   final String buttonText;

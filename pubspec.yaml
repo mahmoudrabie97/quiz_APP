@@ -41,7 +41,7 @@ dependencies:
   http: 
   fluttertoast:
   shared_preferences: 
-  google_fonts: 
+  google_fonts:
   lottie: 
 
 dev_dependencies:

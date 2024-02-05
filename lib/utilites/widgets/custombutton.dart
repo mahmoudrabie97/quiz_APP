@@ -13,7 +13,7 @@ class CustomButton extends StatelessWidget {
     super.key,
     required this.buttonText,
     required this.onPressed,
-    this.buttonColor = AppColor.kmaincolor,
+    this.buttonColor = AppColor.primary,
     this.borderRadius = 30.0,
     this.txtColor = Colors.white,
   });
@@ -30,7 +30,7 @@ class CustomButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(
             borderRadius,
           ),
-          border: Border.all(color: AppColor.kmaincolor),
+          border: Border.all(color: AppColor.primary),
         ),
         child: Center(
           child: Text(

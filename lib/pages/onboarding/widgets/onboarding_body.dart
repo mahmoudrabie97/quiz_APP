@@ -1,34 +1,25 @@
-
-
 import 'package:flutter/material.dart';
 
 import '../../../utilites/widgets/assets.dart';
+import 'custom_container_onboarding.dart';
 
 class OnBoardingBody extends StatelessWidget {
   const OnBoardingBody({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Image.asset(AssetsData.onBoarding),
-        CustomContainerOnBoarding(),
-      ],
-    );
-  }
-}
-
-class CustomContainerOnBoarding extends StatelessWidget {
-  const CustomContainerOnBoarding({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(12),
+    return Center(
+      child: Column(
+      
+        children: [
+          Image.asset(
+            AssetsData.onBoarding,
+            height: MediaQuery.of(context).size.height * .4,
+            width: MediaQuery.of(context).size.width * .6,
+          ),
+          CustomContainerOnBoarding(),
+        ],
       ),
-
     );
   }
 }

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:quizapp/pages/Auth_pages/loginpage/login_page.dart';
+import 'package:quizapp/utilites/extentionhelper.dart';
 import 'package:quizapp/utilites/styles.dart';
 import 'package:quizapp/utilites/assets.dart';
 
@@ -17,10 +19,9 @@ class CustomContainerOnBoarding extends StatelessWidget {
         color: Colors.white,
         borderRadius: BorderRadius.circular(15),
       ),
-      child:  Padding(
+      child: Padding(
         padding: EdgeInsets.all(12.0),
         child: Column(
-
           children: [
             const Text(
               'Login or Sign Up',
@@ -40,15 +41,23 @@ class CustomContainerOnBoarding extends StatelessWidget {
             const SizedBox(
               height: 49,
             ),
-            CustomButton(buttonText: 'Login', onPressed:(){
-
-            } , txtColor: AppColor.whiteColor,buttonColor: AppColor.primary,),
+            CustomButton(
+              buttonText: 'Login',
+              onPressed: () {
+                context.push(LoginView());
+              },
+              txtColor: AppColor.whiteColor,
+              buttonColor: AppColor.primary,
+            ),
             const SizedBox(
               height: 28,
             ),
-            CustomButton(buttonText: 'Create an account', onPressed:(){
-
-            } , txtColor: AppColor.primary,buttonColor: AppColor.greyColor,),
+            CustomButton(
+              buttonText: 'Create an account',
+              onPressed: () {},
+              txtColor: AppColor.primary,
+              buttonColor: AppColor.greyColor,
+            ),
           ],
         ),
       ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../utilites/widgets/assets.dart';
+import '../../../utilites/assets.dart';
 import 'custom_container_onboarding.dart';
 
 class OnBoardingBody extends StatelessWidget {

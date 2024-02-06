@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quizapp/utilites/styles.dart';
-import 'package:quizapp/utilites/widgets/assets.dart';
+import 'package:quizapp/utilites/assets.dart';
 
 import '../../../utilites/appcolors.dart';
 import '../../../utilites/widgets/custombutton.dart';
@@ -31,11 +31,11 @@ class CustomContainerOnBoarding extends StatelessWidget {
             ),
             const Text(
               'Login or create an account to take quiz,',
-              style: Styles.style16,
+              style: Styles.style14,
             ),
             const Text(
               'take part in challenge, and more. ',
-              style: Styles.style16,
+              style: Styles.style14,
             ),
             const SizedBox(
               height: 49,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quizapp/pages/onboarding/onboarding_view.dart';
+import 'package:quizapp/pages/signUp/signup_view.dart';
 import 'package:quizapp/utilites/appcolors.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: AppColor.primary,
       ),
-      home: OnBoardingView(),
+      home: const SignUpView(),
     );
   }
 }

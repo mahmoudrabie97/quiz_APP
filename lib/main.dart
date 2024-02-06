@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:quizapp/pages/Auth_pages/signUp/signup_view.dart';
 import 'package:quizapp/pages/onboarding/onboarding_view.dart';
-import 'package:quizapp/pages/signUp/signup_view.dart';
+
 import 'package:quizapp/utilites/appcolors.dart';
 
 void main() {

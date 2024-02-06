@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:quizapp/utilites/styles.dart';
 import 'package:quizapp/utilites/assets.dart';
 
-import '../../../utilites/appcolors.dart';
-import '../../../utilites/widgets/custombutton.dart';
-import '../../../utilites/widgets/customtextformfield.dart';
+
+import '../../../../utilites/appcolors.dart';
+import '../../../../utilites/widgets/custombutton.dart';
+import '../../../../utilites/widgets/customtextformfield.dart';
 import 'custom_row_signup.dart';
 
 class CustomContainerSignUp extends StatelessWidget {

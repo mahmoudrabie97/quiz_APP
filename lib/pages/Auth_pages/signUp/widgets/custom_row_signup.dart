@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../../../utilites/appcolors.dart';
-import '../../../utilites/styles.dart';
+import '../../../../utilites/appcolors.dart';
+import '../../../../utilites/styles.dart';
+
+
 
 class CustomRowSignUp extends StatelessWidget {
   const CustomRowSignUp({Key? key}) : super(key: key);

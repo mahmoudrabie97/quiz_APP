@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:quizapp/pages/Auth_pages/signUp/signup_view.dart';
+import 'package:quizapp/pages/home_quize_page/root_homepage.dart';
 import 'package:quizapp/utilites/appcolors.dart';
 import 'package:quizapp/utilites/custommethods.dart';
+import 'package:quizapp/utilites/extentionhelper.dart';
 import 'package:quizapp/utilites/styles.dart';
 import 'package:quizapp/utilites/widgets/custombutton.dart';
 import 'package:quizapp/utilites/widgets/customtext.dart';
@@ -101,7 +104,8 @@ class CustomContainerLogin extends StatelessWidget {
                   child: CustomButton(
                     buttonText: 'Login',
                     onPressed: () {
-                      //if (formkey.currentState!.validate()) {}
+                      context.push(RootHomePage());
+                      // if (formkey.currentState!.validate()) {}
                     },
                     buttonColor: AppColor.primary,
                     borderRadius: 12,
@@ -125,7 +129,9 @@ class CustomContainerLogin extends StatelessWidget {
                       color: Colors.grey,
                     ),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        context.push(SignUpView());
+                      },
                       child: const CustomText(
                         text: 'Sign up',
                         fontSize: 16,

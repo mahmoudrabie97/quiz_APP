@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quizapp/pages/home_quize_page/widgets/customcontainermode.dart';
+import 'package:quizapp/pages/solo_quize/solo_quize_view.dart';
+import 'package:quizapp/utilites/extentionhelper.dart';
 
 class Listvuewitemmode extends StatelessWidget {
   const Listvuewitemmode({
@@ -10,15 +12,20 @@ class Listvuewitemmode extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        CustomerContainerMode(
-          modecolor: const Color(0xffFEB7B7),
-          starttext: 'Start',
-          modetext2: 'Mode',
-          modetext: 'Solo',
-          imagestring: 'assets/svg/33.png',
-          contaunerheight: MediaQuery.of(context).size.height * .28,
-          containerwidth: 120,
-          isremaintext: true,
+        GestureDetector(
+          onTap: () {
+            context.push(SoloQuizeView());
+          },
+          child: CustomerContainerMode(
+            modecolor: const Color(0xffFEB7B7),
+            starttext: 'Start',
+            modetext2: 'Mode',
+            modetext: 'Solo',
+            imagestring: 'assets/svg/33.png',
+            contaunerheight: MediaQuery.of(context).size.height * .28,
+            containerwidth: 120,
+            isremaintext: true,
+          ),
         ),
         const SizedBox(
           width: 20,

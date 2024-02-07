@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: AppColor.primary,
         ),
       ),
-      home: const SignUpView(),
+      home: const OnBoardingView(),
     );
   }
 }

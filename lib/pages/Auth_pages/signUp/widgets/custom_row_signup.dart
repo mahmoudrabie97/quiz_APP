@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import '../../../../utilites/appcolors.dart';
 import '../../../../utilites/styles.dart';
 
-
-
 class CustomRowSignUp extends StatelessWidget {
   const CustomRowSignUp({Key? key}) : super(key: key);
 
@@ -17,7 +15,7 @@ class CustomRowSignUp extends StatelessWidget {
           style: Styles.style18,
         ),
         GestureDetector(
-          onTap: (){},
+          onTap: () {},
           child: Text(
             'Login',
             style: Styles.style18.copyWith(color: AppColor.primary),

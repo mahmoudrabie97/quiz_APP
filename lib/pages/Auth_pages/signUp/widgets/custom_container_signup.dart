@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:quizapp/utilites/styles.dart';
 import 'package:quizapp/utilites/assets.dart';
 
-
 import '../../../../utilites/appcolors.dart';
 import '../../../../utilites/widgets/custombutton.dart';
 import '../../../../utilites/widgets/customtextformfield.dart';
@@ -34,13 +33,12 @@ class CustomContainerSignUp extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(12.0),
         child: Column(
-
           children: [
             const Text(
               'Sign Up',
               style: Styles.style24,
             ),
-             Text(
+            Text(
               ' create a new account',
               style: Styles.style16.copyWith(color: Color(0xff9098B1)),
             ),
@@ -139,5 +137,3 @@ class CustomContainerSignUp extends StatelessWidget {
     );
   }
 }
-
-

@@ -5,7 +5,9 @@ import 'package:quizapp/pages/home_quize_page/widgets/customcontainermode.dart';
 import 'package:quizapp/pages/home_quize_page/widgets/custompointscontainer.dart';
 import 'package:quizapp/pages/home_quize_page/widgets/customsearch.dart';
 import 'package:quizapp/pages/home_quize_page/widgets/listviewitemmode.dart';
+import 'package:quizapp/pages/quiz_summary/quizsummaryview.dart';
 import 'package:quizapp/utilites/appcolors.dart';
+import 'package:quizapp/utilites/extentionhelper.dart';
 import 'package:quizapp/utilites/widgets/customtext.dart';
 
 class HomeQuizePage extends StatelessWidget {
@@ -70,7 +72,7 @@ class HomeQuizePage extends StatelessWidget {
           const SizedBox(
             height: 8,
           ),
-          const Padding(
+          Padding(
             padding: EdgeInsets.all(8.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -80,7 +82,11 @@ class HomeQuizePage extends StatelessWidget {
                   fontSize: 20,
                   fontWeight: FontWeight.w900,
                 ),
-                CustomText(text: 'view all', color: Colors.grey),
+                GestureDetector(
+                    onTap: () {
+                      context.push(QuizSummary());
+                    },
+                    child: CustomText(text: 'view all', color: Colors.grey)),
               ],
             ),
           ),

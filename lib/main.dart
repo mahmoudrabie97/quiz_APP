@@ -5,6 +5,8 @@ import 'package:quizapp/pages/home_quize_page/root_homepage.dart';
 import 'package:quizapp/pages/onboarding/onboarding_view.dart';
 import 'package:quizapp/utilites/appcolors.dart';
 
+import 'pages/Auth_pages/signUp/signup_view.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: AppColor.primary,
         ),
       ),
-      home: RootHomePage(),
+      home: const SignUpView(),
     );
   }
 }

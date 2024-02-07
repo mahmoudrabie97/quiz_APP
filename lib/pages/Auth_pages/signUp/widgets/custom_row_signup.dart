@@ -12,13 +12,13 @@ class CustomRowSignUp extends StatelessWidget {
       children: [
         Text(
           'Already have account?',
-          style: Styles.style18,
+          style: Styles.style17,
         ),
         GestureDetector(
           onTap: () {},
           child: Text(
             'Login',
-            style: Styles.style18.copyWith(color: AppColor.primary),
+            style: Styles.style17.copyWith(color: AppColor.primary),
           ),
         ),
       ],

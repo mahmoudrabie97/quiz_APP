@@ -4,10 +4,10 @@ class AppColor {
   static const primary = Color(0xff3498DB);
   static const whiteColor = Color(0xffFFFFFF);
   static const greyColor = Color(0xFFE0E0E0);
+  static const lightGreenColor = Color(0xff88E68B);
+  static const lightGreyColor = Color(0xFFBDBDBD);
+  static const greenColor = Color(0xff2ECC71);
 
-  static const mainColor = Color(0xFF000000);
-  static const appBarColor = Color(0xFFF7F7F7);
-  static const appBgColor = Color(0xFFF7F7F7);
-  static const kmaincolor = Color(0xff7EC042);
-  static const kscaffoldcolor = Color(0xffFDFDFD);
+
+
 }

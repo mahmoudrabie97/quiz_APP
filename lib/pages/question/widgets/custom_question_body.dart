@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:quizapp/pages/question/widgets/custom_bottom_sheet_ietm.dart';
 import 'package:quizapp/utilites/appcolors.dart';
 import 'package:quizapp/utilites/assets.dart';
 import 'package:quizapp/utilites/styles.dart';
 
 import '../../../utilites/widgets/custombutton.dart';
 import '../../solo_quize/widgets/custom_row_question_body.dart';
+import 'custom_bottom_sheet_ietm.dart';
 import 'custom_main_container_question.dart';
 import 'custom_row_question_appbar.dart';
 import 'custom_stack_answer.dart';
@@ -25,6 +25,7 @@ class CustomQuestionBody extends StatelessWidget {
             CustomMainContainerQuestion(height: height),
             //SizedBox(height: MediaQuery.of(context).size.height * .1,),
             Positioned(
+
               left: 15,
               right: 15,
               top: 120,
@@ -62,7 +63,7 @@ class CustomQuestionBody extends StatelessWidget {
               showModalBottomSheet<void>(
                 context: context,
                 builder: (BuildContext context) {
-                  return CustomShowBottomSheetIetm() ;
+                  return CustomShowBottomSheetIetm();
                 },
               );
             },
@@ -74,4 +75,3 @@ class CustomQuestionBody extends StatelessWidget {
     );
   }
 }
-

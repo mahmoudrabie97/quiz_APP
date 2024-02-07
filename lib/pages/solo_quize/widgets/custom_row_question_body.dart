@@ -22,26 +22,20 @@ class CustomRowQuestionBody extends StatelessWidget {
             borderRadius: BorderRadius.all(Radius.circular(20)),
           ),
         ),
-        const Spacer(),
-        Positioned(
-          top: 0,
-         right: 0,
-         left: 0,
-         bottom: 14,
+        SizedBox(width: 60,),
+        CircleAvatar(
+          backgroundColor: AppColor.primary,
+          radius: 40,
           child: CircleAvatar(
-            backgroundColor: AppColor.primary,
-            radius: 40,
-            child: CircleAvatar(
-              backgroundColor: AppColor.whiteColor,
-              radius: 35,
-              child: Text(
-                '6',
-                style: Styles.style26.copyWith(color: AppColor.primary),
-              ),
+            backgroundColor: AppColor.whiteColor,
+            radius: 35,
+            child: Text(
+              '6',
+              style: Styles.style26.copyWith(color: AppColor.primary),
             ),
           ),
         ),
-        Spacer(),
+        SizedBox(width: 60,),
         Container(
           width: 50,
           height: 10,

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../../../utilites/appcolors.dart';
 import '../../../utilites/styles.dart';
-import '../../solo_quize/widgets/custom_row_question_body.dart';
 
 class CustomerInformationSummary extends StatelessWidget {
   const CustomerInformationSummary({
@@ -20,7 +19,7 @@ class CustomerInformationSummary extends StatelessWidget {
       ),
       child: Column(
         children: [
-          const CustomRowQuestionBody(),
+          Image.asset('assets/svg/medal 1.png'),
           Text(
             'Question 13/20',
             style: Styles.style24.copyWith(color: AppColor.primary),

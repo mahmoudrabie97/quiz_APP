@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quizapp/pages/question/widgets/custom_row_question_appbar.dart';
+import 'package:quizapp/pages/quiz_summary/widgets/custom_row_summary_appar.dart';
 
 import '../../../utilites/appcolors.dart';
 
@@ -26,7 +27,7 @@ class CustomerMainSummaryContainerQuiz extends StatelessWidget {
         ),
         child: const Padding(
           padding: EdgeInsets.only(bottom: 120),
-          child: CustomRowQuestionAppbar(),
+          child: CustomRowSummaryAPBar(),
         ),
       ),
     );

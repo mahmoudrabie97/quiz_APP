@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:quizapp/pages/question/widgets/custom_write_container_qeustion.dart';
 import 'package:quizapp/pages/quiz_summary/widgets/custom_tabBar_item.dart';
 import 'package:quizapp/pages/quiz_summary/widgets/customer_information_sumaary.dart';
 import 'package:quizapp/pages/quiz_summary/widgets/customer_summary_quiz.dart';
-import 'package:quizapp/utilites/appcolors.dart';
-
-import '../../../utilites/widgets/custombutton.dart';
 
 class CustomerQuizSummaryBody extends StatelessWidget {
   const CustomerQuizSummaryBody({Key? key}) : super(key: key);

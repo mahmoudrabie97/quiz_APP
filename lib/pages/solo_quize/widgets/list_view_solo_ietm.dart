@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:quizapp/pages/solo_quize/widgets/custom_row1_container.dart';
+import 'package:quizapp/pages/solo_quize/widgets/custom_row2_container.dart';
 
 import '../../../utilites/appcolors.dart';
 import '../../../utilites/assets.dart';
@@ -12,53 +14,26 @@ class ListViewSoloQuizIetm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
         CustomContainerSoloBody(
           childRow: Padding(
-            padding: const EdgeInsets.only(left: 16, right: 16),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Image.asset(AssetsData.dollar),
-                Text('20',style: Styles.style15),
-                const Text(
-                  'Reward ',
-                  style: Styles.style17,
-                ),
-                const Text(
-                  'Entry',
-                  style: Styles.style17,
-                ),
-                const CustomContainerSoloQuizeDollar(
-                  text: '05',
-                  width: 60,
-                ),
-              ],
-            ),
+            padding: EdgeInsets.only(left: 16, right: 16),
+            child: CustomRow1Container(),
           ),
           color: AppColor.whiteColor,
-          borderRadius: const BorderRadius.only(
+          borderRadius: BorderRadius.only(
             topRight: Radius.circular(16),
             topLeft: Radius.circular(16),
           ),
         ),
          CustomContainerSoloBody(
           childRow: Padding(
-            padding: const EdgeInsets.only(left: 16,right: 16),
-            child: Row(
-              children: [
-                Image.asset(AssetsData.accept),
-                Text('10/10 Correct Win',style: Styles.style15,),
-                Spacer(),
-                Image.asset(AssetsData.win),
-                Text('75%',style: Styles.style15,),
-                //Text('10/10 Correct Win',style: Styles.style19,),
-              ],
-            ),
+            padding: EdgeInsets.only(left: 16,right: 16),
+            child: CustomRow2Container(),
           ),
           color: AppColor.lightGreyColor,
-          borderRadius: const BorderRadius.only(
+          borderRadius: BorderRadius.only(
             bottomRight: Radius.circular(16),
             bottomLeft: Radius.circular(16),
           ),

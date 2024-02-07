@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quizapp/pages/Auth_pages/signUp/signup_view.dart';
 import 'package:quizapp/pages/onboarding/onboarding_view.dart';
+import 'package:quizapp/pages/question/question_view.dart';
 import 'package:quizapp/pages/solo_quize/solo_quize_view.dart';
 
 import 'package:quizapp/utilites/appcolors.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: AppColor.primary,
       ),
-      home: const SoloQuizeView(),
+      home: const QuestionView(),
     );
   }
 }

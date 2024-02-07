@@ -15,7 +15,7 @@ final double width;
       width: width,
       height: 28,
       decoration: BoxDecoration(
-        color:AppColor.greenColor,
+        color:AppColor.lightGreenColor,
         borderRadius: BorderRadius.circular(12),
       ),
       child: Padding(

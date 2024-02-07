@@ -5,5 +5,6 @@ class AssetsData{
   static const dollar = 'assets/images/dollar 2.png';
   static const accept = 'assets/images/accept 1.png';
   static const win = 'assets/images/win1.png';
+  static const report = 'assets/images/blood-report.png';
 
 }

@@ -10,7 +10,8 @@ class QuizSummary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: AppColor.lightGreyColor,
+
+      backgroundColor: AppColor.primary,
       // appBar: AppBar(
       //   backgroundColor: AppColor.primary,
       //   leading: IconButton(
@@ -27,7 +28,7 @@ class QuizSummary extends StatelessWidget {
       //     ),
       //   ],
       // ),
-      body: SafeArea(child: CustomerQuizSummaryBody()),
+      body: CustomerQuizSummaryBody(),
     );
   }
 }

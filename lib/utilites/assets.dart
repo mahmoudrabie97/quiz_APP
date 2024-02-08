@@ -6,5 +6,7 @@ class AssetsData{
   static const accept = 'assets/images/accept 1.png';
   static const win = 'assets/images/win1.png';
   static const report = 'assets/images/blood-report.png';
+  static const question = 'assets/images/question 1.png';
+  static const cansel1 = 'assets/images/cancel 1.png';
 
 }

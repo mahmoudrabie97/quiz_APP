@@ -19,7 +19,7 @@ class CustomerQuizSummaryBody extends StatelessWidget {
             Positioned(
               left: 15,
               right: 15,
-              top: 120,
+              top: 90,
               child: SizedBox(
                 height: MediaQuery.of(context).size.height * .3,
                 //jjjjjjjjjjjj

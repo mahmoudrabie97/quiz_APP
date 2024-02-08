@@ -18,7 +18,7 @@ class CustomerMainSummaryContainerQuiz extends StatelessWidget {
       padding: const EdgeInsets.only(left: 5, right: 5),
       child: Container(
         width: double.infinity,
-        height: height * .3,
+        height: height * .25,
         decoration: const BoxDecoration(
           color: AppColor.primary,
           borderRadius: BorderRadius.all(

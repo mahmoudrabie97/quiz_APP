@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quizapp/pages/Auth_pages/loginpage/login_page.dart';
+import 'package:quizapp/pages/edit_profile/edit_profile_view.dart';
 import 'package:quizapp/pages/home_quize_page/home_quize_page.dart';
 import 'package:quizapp/pages/home_quize_page/root_homepage.dart';
 import 'package:quizapp/pages/my_profile/my_profile_view.dart';
@@ -22,11 +23,11 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: AppColor.primary,
-        bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        bottomNavigationBarTheme: const BottomNavigationBarThemeData(
           backgroundColor: AppColor.primary,
         ),
       ),
-      home: const MyProfileView(),
+      home: const EditProfileView(),
     );
   }
 }

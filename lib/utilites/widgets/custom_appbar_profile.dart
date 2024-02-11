@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
-import '../../../utilites/appcolors.dart';
-import '../../../utilites/styles.dart';
+import '../appcolors.dart';
+import '../styles.dart';
 
 class CustomAppbarProfile extends StatelessWidget {
-  const CustomAppbarProfile({Key? key}) : super(key: key);
+  const CustomAppbarProfile({Key? key, required this.text}) : super(key: key);
+
+  final String text;
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +23,7 @@ class CustomAppbarProfile extends StatelessWidget {
           ),
           const SizedBox(width: 80,),
 
-          const Text('My Profile',style: Styles.style28,),
+           Text(text,style: Styles.style28,),
         ],
       ),
     );

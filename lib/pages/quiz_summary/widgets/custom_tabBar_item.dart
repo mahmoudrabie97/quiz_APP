@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:quizapp/pages/quiz_summary/widgets/custom_column_quize_summary.dart';
+import 'package:quizapp/pages/quiz_summary/widgets/custom_container_think.dart';
 import 'package:quizapp/utilites/appcolors.dart';
+import 'package:quizapp/utilites/assets.dart';
 import 'package:quizapp/utilites/styles.dart';
 import 'package:flutter/scheduler.dart' show TickerProviderStateMixin;
+import 'package:quizapp/utilites/widgets/customtext.dart';
 
 class CustomTabBarItem extends StatelessWidget {
   const CustomTabBarItem({Key? key}) : super(key: key);
@@ -63,7 +67,7 @@ class _CustomRowWordsState extends State<CustomRowWords>
             labelColor: Colors.black,
             unselectedLabelColor: Colors.grey,
             labelPadding: EdgeInsets.only(right: 20, left: 20),
-            isScrollable: true,
+            //isScrollable: true,
             tabs: [
               Tab(text: 'Summary'),
               Tab(text: 'Friends'),
@@ -77,7 +81,34 @@ class _CustomRowWordsState extends State<CustomRowWords>
           child: TabBarView(
             controller: tabController,
             children: [
-              Text('1'),
+              ListView.builder(
+                itemBuilder: (_, index) {
+                  return const Padding(
+                    padding: EdgeInsets.only(left: 10, right: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        CustomText(text: '1 st Try'),
+                        CustomColumnQuizeSummary(
+                          image: AssetsData.question,
+                          text: 'Total Que',
+                        ),
+                        CustomContainerThink(),
+                        CustomColumnQuizeSummary(
+                          image: AssetsData.accept,
+                          text: 'Correct',
+                        ),
+                        CustomContainerThink(),
+                        CustomColumnQuizeSummary(
+                          image: AssetsData.cansel1,
+                          text: ' Wrong',
+                        ),
+                      ],
+                    ),
+                  );
+                },
+                itemCount: 3,
+              ),
               Text('2'),
               Text('3'),
             ],

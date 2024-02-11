@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: AppColor.primary,
         ),
       ),
-      home: const MyProfileView(),
+      home: const OnBoardingView(),
     );
   }
 }

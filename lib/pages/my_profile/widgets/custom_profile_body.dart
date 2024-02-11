@@ -3,7 +3,7 @@ import 'package:quizapp/utilites/appcolors.dart';
 import 'package:quizapp/utilites/assets.dart';
 import 'package:quizapp/utilites/styles.dart';
 
-import 'custom_appbar_profile.dart';
+import '../../../utilites/widgets/custom_appbar_profile.dart';
 import 'custom_main_profile_container.dart';
 import 'custom_row_settings.dart';
 
@@ -15,7 +15,7 @@ class CustomProfileBody extends StatelessWidget {
     return const SafeArea(
         child: Column(
       children: [
-        CustomAppbarProfile(),
+        CustomAppbarProfile(text: 'My Profile',),
         CustomMainProfileContainer(),
 
 

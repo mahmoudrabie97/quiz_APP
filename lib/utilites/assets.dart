@@ -18,5 +18,7 @@ class AssetsData{
   static const shutDown = 'assets/images/shutdown 1.png';
   static const father = 'assets/images/father.png';
   static const student = 'assets/images/student.png';
+  static const old = 'assets/images/old.png';
+  static const young = 'assets/images/young.png';
 
 }

@@ -40,12 +40,12 @@ class _CustomTabsOFtabBarState extends State<CustomTabsOFtabBar>
             controller: tabController,
             labelColor: Colors.black,
             unselectedLabelColor: Colors.grey,
-            labelPadding: EdgeInsets.only(right: 20, left: 20),
+            labelPadding: const EdgeInsets.only(right: 20, left: 20),
             //isScrollable: true,
             tabs: [
-              Tab(text: 'Summary'),
-              Tab(text: 'Friends'),
-              Tab(text: 'Standings'),
+              const Tab(text: 'Summary'),
+              const Tab(text: 'Friends'),
+              const Tab(text: 'Standings'),
             ],
           ),
         ),
@@ -57,28 +57,28 @@ class _CustomTabsOFtabBarState extends State<CustomTabsOFtabBar>
             children: [
               ListView.builder(
                 itemBuilder: (_, index) {
-                  return EstandingsListItem();
+                  return const EstandingsListItem();
                 },
                 itemCount: 3,
               ),
               ListView.separated(
                 itemBuilder: (_, index) {
-                  return FriendsListItem();
+                  return const FriendsListItem();
                 },
                 itemCount: 3,
                 separatorBuilder: (BuildContext context, int index) {
-                  return Divider(
+                  return const Divider(
                     height: 9,
                   );
                 },
               ),
               ListView.separated(
                 itemBuilder: (_, index) {
-                  return SummaryListItems();
+                  return const SummaryListItems();
                 },
                 itemCount: 3,
                 separatorBuilder: (BuildContext context, int index) {
-                  return Divider(
+                  return const Divider(
                     height: 9,
                   );
                 },

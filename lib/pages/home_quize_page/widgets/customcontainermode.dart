@@ -58,7 +58,12 @@ class CustomerContainerMode extends StatelessWidget {
                   text: modetext2,
                   color: Colors.white,
                 ),
-              Expanded(child: Image.asset(imagestring)),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 60),
+                  child: Image.asset(imagestring,),
+                ),
+              ),
             ],
           ),
         ));

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quizapp/pages/home_quize_page/widgets/customcontainermode.dart';
 import 'package:quizapp/pages/solo_quize/solo_quize_view.dart';
+import 'package:quizapp/utilites/assets.dart';
 import 'package:quizapp/utilites/extentionhelper.dart';
 
 class Listvuewitemmode extends StatelessWidget {
@@ -21,7 +22,7 @@ class Listvuewitemmode extends StatelessWidget {
             starttext: 'Start',
             modetext2: 'Mode',
             modetext: 'Solo',
-            imagestring: 'assets/svg/33.png',
+            imagestring: AssetsData.student,
             contaunerheight: MediaQuery.of(context).size.height * .28,
             containerwidth: 120,
             isremaintext: true,
@@ -35,7 +36,7 @@ class Listvuewitemmode extends StatelessWidget {
           starttext: 'Start',
           modetext2: 'Mode',
           modetext: 'Multiplayer',
-          imagestring: 'assets/svg/33.png',
+          imagestring: AssetsData.young,
           contaunerheight: MediaQuery.of(context).size.height * .28,
           containerwidth: 120,
           isremaintext: true,
@@ -47,7 +48,7 @@ class Listvuewitemmode extends StatelessWidget {
           modecolor: const Color(0xff88E68B),
           starttext: 'Start',
           modetext: ' 1 Vs. 1',
-          imagestring: 'assets/svg/33.png',
+          imagestring: AssetsData.old,
           contaunerheight: MediaQuery.of(context).size.height * .28,
           containerwidth: 120,
           modetext2: 'Mode',

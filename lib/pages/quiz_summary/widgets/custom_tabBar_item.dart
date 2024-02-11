@@ -62,8 +62,8 @@ class _CustomRowWordsState extends State<CustomRowWords>
             controller: tabController,
             labelColor: Colors.black,
             unselectedLabelColor: Colors.grey,
-            // labelPadding: EdgeInsets.only(right: 0, left: 0),
-            //isScrollable: true,
+            labelPadding: EdgeInsets.only(right: 20, left: 20),
+            isScrollable: true,
             tabs: [
               Tab(text: 'Summary'),
               Tab(text: 'Friends'),

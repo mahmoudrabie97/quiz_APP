@@ -19,7 +19,7 @@ class CustomerQuizSummaryBody extends StatelessWidget {
             Positioned(
               left: 15,
               right: 15,
-              top: 90,
+              top: 80,
               child: SizedBox(
                 height: MediaQuery.of(context).size.height * .3,
                 //jjjjjjjjjjjj
@@ -29,7 +29,7 @@ class CustomerQuizSummaryBody extends StatelessWidget {
           ],
         ),
         SizedBox(
-          height: 140,
+          height: 115,
         ),
         const CustomTabBarItem(),
       ],

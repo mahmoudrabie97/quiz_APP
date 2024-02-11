@@ -12,13 +12,17 @@ class CustomProfileBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
-        child: Column(
+    return SafeArea(
+        child: ListView(
       children: [
-        CustomAppbarProfile(text: 'My Profile',),
-        CustomMainProfileContainer(),
-
-
+        Column(
+          children: [
+            CustomAppbarProfile(
+              text: 'My Profile',
+            ),
+            CustomMainProfileContainer(),
+          ],
+        ),
       ],
     ));
   }

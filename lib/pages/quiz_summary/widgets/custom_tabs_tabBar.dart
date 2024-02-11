@@ -51,7 +51,7 @@ class _CustomTabsOFtabBarState extends State<CustomTabsOFtabBar>
         ),
         Container(
           width: double.maxFinite,
-          height: 300,
+          height: 250,
           child: TabBarView(
             controller: tabController,
             children: [

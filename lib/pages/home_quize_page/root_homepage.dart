@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quizapp/pages/category_page/category_page.dart';
 import 'package:quizapp/pages/home_quize_page/home_quize_page.dart';
+import 'package:quizapp/pages/my_profile/my_profile_view.dart';
 
 import 'package:quizapp/pages/question/question_view.dart';
 import 'package:quizapp/pages/qusetionPage/questionpage.dart';
@@ -19,7 +20,7 @@ class _RootHomePageState extends State<RootHomePage> {
     HomeQuizePage(),
     const QuestionView(),
     const CategoryPage(),
-
+    MyProfileView(),
   ];
   @override
   Widget build(BuildContext context) {

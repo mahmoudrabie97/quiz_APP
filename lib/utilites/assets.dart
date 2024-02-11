@@ -8,5 +8,13 @@ class AssetsData{
   static const report = 'assets/images/blood-report.png';
   static const question = 'assets/images/question 1.png';
   static const cansel1 = 'assets/images/cancel 1.png';
+  static const person = 'assets/images/person.png';
+  static const about = 'assets/images/about 1.png';
+  static const gear = 'assets/images/gear 1.png';
+  static const ideas = 'assets/images/ideas 1.png';
+  static const individual = 'assets/images/individual 1.png';
+  static const medal = 'assets/images/medal 1.png';
+  static const niotification = 'assets/images/notification (1) 1.png';
+  static const shutDown = 'assets/images/shutdown 1.png';
 
 }

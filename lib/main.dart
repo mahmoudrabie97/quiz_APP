@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:quizapp/pages/Auth_pages/loginpage/login_page.dart';
 import 'package:quizapp/pages/home_quize_page/home_quize_page.dart';
 import 'package:quizapp/pages/home_quize_page/root_homepage.dart';
+import 'package:quizapp/pages/my_profile/my_profile_view.dart';
 import 'package:quizapp/pages/onboarding/onboarding_view.dart';
 import 'package:quizapp/utilites/appcolors.dart';
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: AppColor.primary,
         ),
       ),
-      home: const OnBoardingView(),
+      home: const MyProfileView(),
     );
   }
 }

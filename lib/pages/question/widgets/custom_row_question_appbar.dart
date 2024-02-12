@@ -16,7 +16,7 @@ class CustomRowQuestionAppbar extends StatelessWidget {
             color: AppColor.whiteColor,
           ),
         ),
-        SizedBox(width: 300,),
+        Spacer(),
         IconButton(
           onPressed: () {},
           icon: const Icon(

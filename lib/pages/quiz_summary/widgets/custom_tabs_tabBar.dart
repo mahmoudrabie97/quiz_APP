@@ -40,45 +40,45 @@ class _CustomTabsOFtabBarState extends State<CustomTabsOFtabBar>
             controller: tabController,
             labelColor: Colors.black,
             unselectedLabelColor: Colors.grey,
-            labelPadding: const EdgeInsets.only(right: 20, left: 20),
+            labelPadding: EdgeInsets.only(right: 20, left: 20),
             //isScrollable: true,
             tabs: [
-              const Tab(text: 'Summary'),
-              const Tab(text: 'Friends'),
-              const Tab(text: 'Standings'),
+              Tab(text: 'Summary'),
+              Tab(text: 'Friends'),
+              Tab(text: 'Standings'),
             ],
           ),
         ),
         Container(
           width: double.maxFinite,
-          height: 250,
+          height: 300,
           child: TabBarView(
             controller: tabController,
             children: [
               ListView.builder(
                 itemBuilder: (_, index) {
-                  return const EstandingsListItem();
+                  return EstandingsListItem();
                 },
                 itemCount: 3,
               ),
               ListView.separated(
                 itemBuilder: (_, index) {
-                  return const FriendsListItem();
+                  return FriendsListItem();
                 },
                 itemCount: 3,
                 separatorBuilder: (BuildContext context, int index) {
-                  return const Divider(
+                  return Divider(
                     height: 9,
                   );
                 },
               ),
               ListView.separated(
                 itemBuilder: (_, index) {
-                  return const SummaryListItems();
+                  return SummaryListItems();
                 },
                 itemCount: 3,
                 separatorBuilder: (BuildContext context, int index) {
-                  return const Divider(
+                  return Divider(
                     height: 9,
                   );
                 },

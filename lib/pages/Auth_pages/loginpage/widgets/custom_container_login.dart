@@ -29,7 +29,7 @@ class CustomContainerLogin extends StatelessWidget {
       ),
       child: Padding(
         padding: const EdgeInsets.all(5.0),
-        child: Column(
+        child: ListView(
           children: [
             const AnimatedTextWidget(),
             const Text(

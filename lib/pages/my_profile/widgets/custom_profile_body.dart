@@ -14,7 +14,7 @@ class CustomProfileBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: ListView(
-      children: [
+      children: const [
         Column(
           children: [
             CustomAppbarProfile(

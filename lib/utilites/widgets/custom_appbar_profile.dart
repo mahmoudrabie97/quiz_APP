@@ -15,7 +15,9 @@ class CustomAppbarProfile extends StatelessWidget {
       child: Row(
         children: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
             icon: const Icon(
               Icons.arrow_back_ios,
               color: AppColor.whiteColor,

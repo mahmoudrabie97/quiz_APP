@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quizapp/pages/home_quize_page/widgets/customcontainermode.dart';
+import 'package:quizapp/pages/home_quize_page/widgets/smallcontainermode.dart';
 import 'package:quizapp/utilites/appcolors.dart';
 import 'package:quizapp/utilites/assets.dart';
 
@@ -32,27 +33,27 @@ class CustomCategriesItem extends StatelessWidget {
             children: [
               Column(
                 children: [
-                  CustomerContainerMode(
-                    modecolor:AppColor.greenColor,
+                  SmallContainerMode(
+                    modecolor: AppColor.greenColor,
                     starttext: 'Start',
                     modetext2: 'Verbal',
                     modetext: 'Questions',
                     imagestring: AssetsData.sport,
                     contaunerheight: MediaQuery.of(context).size.height * .18,
-                    containerwidth: 170,
+                    containerwidth: 175,
                     isremaintext: true,
                   ),
                   SizedBox(
                     height: 8,
                   ),
-                  CustomerContainerMode(
+                  SmallContainerMode(
                     modecolor: AppColor.pink,
                     starttext: 'Start',
                     modetext2: 'Quantitive',
                     modetext: 'Questions',
                     imagestring: AssetsData.sport1,
                     contaunerheight: MediaQuery.of(context).size.height * .18,
-                    containerwidth: 170,
+                    containerwidth: 175,
                     isremaintext: true,
                   ),
                 ],

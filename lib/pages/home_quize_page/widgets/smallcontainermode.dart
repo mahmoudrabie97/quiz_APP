@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:quizapp/utilites/widgets/customtext.dart';
 
-class CustomerContainerMode extends StatelessWidget {
-  const CustomerContainerMode(
+class SmallContainerMode extends StatelessWidget {
+  const SmallContainerMode(
       {super.key,
       required this.modetext,
       required this.modecolor,
@@ -47,25 +47,33 @@ class CustomerContainerMode extends StatelessWidget {
                 height: 10,
               ),
               if (isremaintext)
-                CustomText(
-                  text: modetext,
-                  color: Colors.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
+                Row(
+                  children: [
+                    Column(
+                      children: [
+                        CustomText(
+                          text: modetext,
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                        if (isremaintext)
+                          CustomText(
+                            text: modetext2,
+                            color: Colors.white,
+                          ),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 7,
+                    ),
+                    Expanded(
+                      child: Image.asset(
+                        imagestring,
+                      ),
+                    )
+                  ],
                 ),
-              if (isremaintext)
-                CustomText(
-                  text: modetext2,
-                  color: Colors.white,
-                ),
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 60),
-                  child: Image.asset(
-                    imagestring,
-                  ),
-                ),
-              )
             ],
           ),
         ));

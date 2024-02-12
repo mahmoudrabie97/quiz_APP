@@ -2,10 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:quizapp/utilites/appcolors.dart';
 import 'package:quizapp/utilites/assets.dart';
+import 'package:quizapp/utilites/extentionhelper.dart';
 import 'package:quizapp/utilites/styles.dart';
 import 'package:quizapp/utilites/widgets/custombutton.dart';
 
 import '../../../utilites/widgets/custom_small_button_text.dart';
+import '../../edit_profile/edit_profile_view.dart';
 
 class CustomRowMainInformation extends StatelessWidget {
   const CustomRowMainInformation({Key? key}) : super(key: key);
@@ -25,11 +27,13 @@ class CustomRowMainInformation extends StatelessWidget {
                 'Enas Omar',
                 style: Styles.style20.copyWith(color: Color(0x61000000)),
               ),
-              Text(
+              const Text(
                 'enasomar1588@gmail.com',
                 style: Styles.style17,
               ),
-              CustomSmallButtonText(text: 'EDIT PROFILE',)
+               CustomSmallButtonText(text: 'EDIT PROFILE',onPressed: (){
+              context.push(EditProfileView());
+              },)
             ],
           ),
         ],

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quizapp/pages/Auth_pages/loginpage/widgets/animated_text_widget.dart';
 import 'package:quizapp/pages/Auth_pages/signUp/signup_view.dart';
 import 'package:quizapp/pages/home_quize_page/root_homepage.dart';
 import 'package:quizapp/utilites/appcolors.dart';
@@ -30,10 +31,7 @@ class CustomContainerLogin extends StatelessWidget {
         padding: const EdgeInsets.all(5.0),
         child: Column(
           children: [
-            const Text(
-              'Welcome Back ',
-              style: Styles.style24,
-            ),
+            const AnimatedTextWidget(),
             const Text(
               'Login to your account,',
               style: Styles.style16,

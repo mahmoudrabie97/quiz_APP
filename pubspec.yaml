@@ -42,6 +42,7 @@ dependencies:
   shared_preferences: 
   google_fonts: 
   lottie: 
+  animated_text_kit: 
 
 dev_dependencies:
   flutter_test:

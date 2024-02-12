@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        canvasColor: AppColor.primary,
         scaffoldBackgroundColor: AppColor.primary,
         bottomNavigationBarTheme: const BottomNavigationBarThemeData(
           backgroundColor: AppColor.primary,
@@ -33,3 +34,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+// theme: new ThemeData(
+//         primarySwatch: Colors.blue,
+//         canvasColor: Colors.green
+//       ),

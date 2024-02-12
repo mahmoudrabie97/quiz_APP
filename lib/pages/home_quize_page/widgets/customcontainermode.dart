@@ -35,37 +35,42 @@ class CustomerContainerMode extends StatelessWidget {
         ),
         child: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              CustomText(
-                  text: starttext,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 17),
-              const SizedBox(
-                height: 10,
+          child:
+
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  CustomText(
+                      text: starttext,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 17),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  if (isremaintext)
+                    CustomText(
+                      text: modetext,
+                      color: Colors.white,
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  if (isremaintext)
+                    CustomText(
+                      text: modetext2,
+                      color: Colors.white,
+                    ),
+
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 60),
+                      child: Image.asset(imagestring,),),
+                  )
+
+                ],
               ),
-              if (isremaintext)
-                CustomText(
-                  text: modetext,
-                  color: Colors.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
-              if (isremaintext)
-                CustomText(
-                  text: modetext2,
-                  color: Colors.white,
-                ),
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 60),
-                  child: Image.asset(imagestring,),
-                ),
-              ),
-            ],
-          ),
+
+          
         ));
   }
 }

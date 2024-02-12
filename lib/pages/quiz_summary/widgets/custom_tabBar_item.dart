@@ -24,8 +24,8 @@ class CustomTabBarItem extends StatelessWidget {
           ),
           color: AppColor.whiteColor,
         ),
-        child: Column(
-          children: [
+        child: ListView(
+          children: const [
             CustomTabsOFtabBar(),
           ],
         ),

@@ -20,5 +20,8 @@ class AssetsData{
   static const student = 'assets/images/student.png';
   static const old = 'assets/images/old.png';
   static const young = 'assets/images/young.png';
+  static const choose = 'assets/images/choose 1.png';
+  static const sport = 'assets/images/sports.png';
+  static const sport1 = 'assets/images/sports (1).png';
 
 }

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quizapp/pages/home_quize_page/widgets/customcontainermode.dart';
+import 'package:quizapp/utilites/appcolors.dart';
+import 'package:quizapp/utilites/assets.dart';
 
 class CustomCategriesItem extends StatelessWidget {
   const CustomCategriesItem({
@@ -18,7 +20,7 @@ class CustomCategriesItem extends StatelessWidget {
             starttext: 'Start',
             modetext2: '',
             modetext: 'RandomQuiz',
-            imagestring: 'assets/svg/33.png',
+            imagestring: AssetsData.choose,
             contaunerheight: MediaQuery.of(context).size.height * .38,
             containerwidth: 220,
             isremaintext: true,
@@ -31,11 +33,11 @@ class CustomCategriesItem extends StatelessWidget {
               Column(
                 children: [
                   CustomerContainerMode(
-                    modecolor: const Color(0xff88E68B),
+                    modecolor:AppColor.greenColor,
                     starttext: 'Start',
                     modetext2: 'Verbal',
                     modetext: 'Questions',
-                    imagestring: 'assets/svg/test-tube.png',
+                    imagestring: AssetsData.sport,
                     contaunerheight: MediaQuery.of(context).size.height * .18,
                     containerwidth: 170,
                     isremaintext: true,
@@ -44,11 +46,11 @@ class CustomCategriesItem extends StatelessWidget {
                     height: 8,
                   ),
                   CustomerContainerMode(
-                    modecolor: const Color(0xffFEB7B7),
+                    modecolor: AppColor.pink,
                     starttext: 'Start',
                     modetext2: 'Quantitive',
                     modetext: 'Questions',
-                    imagestring: 'assets/svg/table-globe.png',
+                    imagestring: AssetsData.sport1,
                     contaunerheight: MediaQuery.of(context).size.height * .18,
                     containerwidth: 170,
                     isremaintext: true,

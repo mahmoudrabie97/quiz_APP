@@ -32,9 +32,11 @@ class _RootHomePageState extends State<RootHomePage> {
 
   Widget buildBottomNavBar() {
     return BottomNavigationBar(
-      selectedItemColor: AppColor.primary,
-      unselectedItemColor: Colors.grey,
-      backgroundColor: Colors.amber,
+      backgroundColor : AppColor.whiteColor,
+      fixedColor: AppColor.whiteColor,
+     // selectedItemColor: AppColor.primary,
+
+
       currentIndex: currentindex,
       onTap: (value) {
         setState(() {

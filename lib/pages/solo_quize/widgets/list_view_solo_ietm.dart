@@ -5,7 +5,7 @@ import 'package:quizapp/pages/solo_quize/widgets/custom_row2_container.dart';
 import '../../../utilites/appcolors.dart';
 import '../../../utilites/assets.dart';
 import '../../../utilites/styles.dart';
-import 'custom_container_solo_body.dart';
+import '../../../utilites/widgets/custom_half_container.dart';
 import 'custom_container_solo_quize_dollar.dart';
 class ListViewSoloQuizIetm extends StatelessWidget {
   const ListViewSoloQuizIetm({
@@ -16,7 +16,7 @@ class ListViewSoloQuizIetm extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        CustomContainerSoloBody(
+        CustomHalfContainerBody(
           childRow: Padding(
             padding: EdgeInsets.only(left: 16, right: 16),
             child: CustomRow1Container(),
@@ -27,7 +27,7 @@ class ListViewSoloQuizIetm extends StatelessWidget {
             topLeft: Radius.circular(16),
           ),
         ),
-         CustomContainerSoloBody(
+         CustomHalfContainerBody(
           childRow: Padding(
             padding: EdgeInsets.only(left: 16,right: 16),
             child: CustomRow2Container(),

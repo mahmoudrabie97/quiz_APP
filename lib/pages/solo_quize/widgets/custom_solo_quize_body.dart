@@ -3,7 +3,7 @@ import 'package:quizapp/utilites/appcolors.dart';
 import 'package:quizapp/utilites/assets.dart';
 import 'package:quizapp/utilites/styles.dart';
 
-import 'custom_container_solo_body.dart';
+import '../../../utilites/widgets/custom_half_container.dart';
 import 'custom_container_solo_quize_dollar.dart';
 import 'list_view_solo_ietm.dart';
 

@@ -13,7 +13,7 @@ class LoginBody extends StatelessWidget {
       children: [
         Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Image.asset(AssetsData.login, width: 200),

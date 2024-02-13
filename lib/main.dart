@@ -7,6 +7,7 @@ import 'package:quizapp/pages/my_profile/my_profile_view.dart';
 import 'package:quizapp/pages/on_boarding_one/on_boarding_one_view.dart';
 import 'package:quizapp/pages/on_boarding_one/widgets/custom_on_boarding_one_body.dart';
 import 'package:quizapp/pages/onboarding/onboarding_view.dart';
+import 'package:quizapp/pages/verification_code/verification_code_view.dart';
 import 'package:quizapp/utilites/appcolors.dart';
 
 import 'pages/Auth_pages/signUp/signup_view.dart';
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: AppColor.primary,
         ),
       ),
-      home: const OnBoardingOneView(),
+      home: const OnBoardingView(),
     );
   }
 }

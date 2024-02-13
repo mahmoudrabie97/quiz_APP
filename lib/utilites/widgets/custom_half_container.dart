@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CustomContainerSoloBody extends StatelessWidget {
-  const CustomContainerSoloBody(
+class CustomHalfContainerBody extends StatelessWidget {
+  const CustomHalfContainerBody(
       {Key? key,
       required this.childRow,
       required this.color,

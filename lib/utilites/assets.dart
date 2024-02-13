@@ -23,5 +23,6 @@ class AssetsData{
   static const choose = 'assets/images/choose 1.png';
   static const sport = 'assets/images/sports.png';
   static const sport1 = 'assets/images/sports (1).png';
+  static const deadline = 'assets/images/deadline 1.png';
 
 }

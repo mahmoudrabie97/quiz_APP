@@ -13,10 +13,12 @@ class Styles {
       fontSize: 16, color: AppColor.primary, fontWeight: FontWeight.w400);
   static const style26= TextStyle(
       fontSize: 26, color: AppColor.whiteColor, fontWeight: FontWeight.w500);
+
   static const style15=
   TextStyle(fontSize: 15, color: Color(0x8A000000), fontWeight: FontWeight.w500);
+
   static const style13=
-  TextStyle(fontSize: 13, color: AppColor.primary, fontWeight: FontWeight.w600);
+  TextStyle(fontSize: 14, color: AppColor.primary, fontWeight: FontWeight.w600);
 
   static const style19=
   TextStyle(fontSize: 18, color: Color(0xff001833), fontWeight: FontWeight.w500);

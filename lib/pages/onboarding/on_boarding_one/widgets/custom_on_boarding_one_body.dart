@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quizapp/pages/onboarding/onboarding_view.dart';
+import 'package:quizapp/pages/onboarding/onboarding_2/onboarding_view.dart';
 import 'package:quizapp/utilites/appcolors.dart';
 import 'package:quizapp/utilites/assets.dart';
 import 'package:quizapp/utilites/extentionhelper.dart';

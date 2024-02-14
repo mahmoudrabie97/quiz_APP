@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../utilites/assets.dart';
+import '../../../../utilites/assets.dart';
 import 'custom_container_onboarding.dart';
 
 class OnBoardingBody extends StatelessWidget {
@@ -10,7 +10,6 @@ class OnBoardingBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
-      
         children: [
           Image.asset(
             AssetsData.onBoarding,
@@ -23,5 +22,3 @@ class OnBoardingBody extends StatelessWidget {
     );
   }
 }
-
-

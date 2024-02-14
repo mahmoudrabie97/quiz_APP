@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:quizapp/pages/on_boarding_one/widgets/custom_on_boarding_one_body.dart';
+import 'package:quizapp/pages/onboarding/on_boarding_one/widgets/custom_on_boarding_one_body.dart';
 import 'package:quizapp/utilites/appcolors.dart';
-
 
 class OnBoardingOneView extends StatelessWidget {
   const OnBoardingOneView({Key? key}) : super(key: key);
@@ -14,5 +13,4 @@ class OnBoardingOneView extends StatelessWidget {
       body: SafeArea(child: CustomOnBoardingOneBody()),
     );
   }
-
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quizapp/utilites/extentionhelper.dart';
 import 'package:quizapp/utilites/styles.dart';
 
 import '../../../utilites/appcolors.dart';
@@ -12,13 +13,18 @@ class CustomRowSummaryAPBar extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
           icon: const Icon(
             Icons.arrow_back_ios,
-            color: AppColor.whiteColor,
+            color: Color.fromARGB(89, 255, 255, 255),
           ),
         ),
-      Text('Quiz Summary ',style: Styles.style28,),
+        Text(
+          'Quiz Summary ',
+          style: Styles.style28,
+        ),
         IconButton(
           onPressed: () {},
           icon: const Icon(

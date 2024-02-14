@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../utilites/styles.dart';
+import '../../../../utilites/styles.dart';
 
 class CustomOnBoardingSmallContainer extends StatelessWidget {
   const CustomOnBoardingSmallContainer(
@@ -24,7 +24,13 @@ class CustomOnBoardingSmallContainer extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.only(left: 12),
         child: Row(
-          children: [Image.asset(image), Text(text,style: Styles.style20,)],
+          children: [
+            Image.asset(image),
+            Text(
+              text,
+              style: Styles.style20,
+            )
+          ],
         ),
       ),
     );

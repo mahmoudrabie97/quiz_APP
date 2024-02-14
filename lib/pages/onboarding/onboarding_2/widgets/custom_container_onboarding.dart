@@ -4,8 +4,8 @@ import 'package:quizapp/utilites/extentionhelper.dart';
 import 'package:quizapp/utilites/styles.dart';
 import 'package:quizapp/utilites/assets.dart';
 
-import '../../../utilites/appcolors.dart';
-import '../../../utilites/widgets/custombutton.dart';
+import '../../../../utilites/appcolors.dart';
+import '../../../../utilites/widgets/custombutton.dart';
 
 class CustomContainerOnBoarding extends StatelessWidget {
   const CustomContainerOnBoarding({Key? key}) : super(key: key);

@@ -14,7 +14,9 @@ class SoloQuizeView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
           icon: const Icon(
             Icons.arrow_back_ios,
             color: AppColor.whiteColor,
@@ -28,8 +30,11 @@ class SoloQuizeView extends StatelessWidget {
         )),
         actions: const [
           Padding(
-            padding:  EdgeInsets.only(right: 10),
-            child: CustomContainerSoloQuizeDollar(text: '1245', width: 70,),
+            padding: EdgeInsets.only(right: 10),
+            child: CustomContainerSoloQuizeDollar(
+              text: '1245',
+              width: 70,
+            ),
           ),
         ],
       ),

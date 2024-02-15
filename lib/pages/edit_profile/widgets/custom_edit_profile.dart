@@ -11,7 +11,7 @@ class CustomEditProfileBody extends StatelessWidget {
     return  SingleChildScrollView(
       child: Column(
         children: [
-         CustomAppbarProfile(text: 'Edit Profile'),
+         CustomAppbar(text: 'Edit Profile'),
           CustomMainContainerEditProfle(),
         ],
       ),

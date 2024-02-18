@@ -19,30 +19,29 @@ class CustomTextFormField extends StatelessWidget {
 
   final Color focusColor;
 
-  const CustomTextFormField
-
-  (
-  {super.key,
-  this.hintText,
-  this.focusnode,
-  this.validator,
-  this.suffixpressed,
-  this.controller,
-  this.keyboardType,
-  this.obscureText = false,
-  this.hinnntcolr = Colors.black,
-  this.perfixicon,
-  this.onsubmitted,
-  this.suffixicon, this.fillColor = Colors.white,
-  this.focusColor=Colors.white,
-  this.prefixColor= Colors.white});
+  const CustomTextFormField(
+      {super.key,
+      this.hintText,
+      this.focusnode,
+      this.validator,
+      this.suffixpressed,
+      this.controller,
+      this.keyboardType,
+      this.obscureText = false,
+      this.hinnntcolr = Colors.black,
+      this.perfixicon,
+      this.onsubmitted,
+      this.suffixicon,
+      this.fillColor = Colors.white,
+      this.focusColor = Colors.white,
+      this.prefixColor = Colors.white});
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       style: const TextStyle(
-        //backgroundColor: Color(0xffFFFFFF),
-      ),
+          //backgroundColor: Color(0xffFFFFFF),
+          ),
       decoration: InputDecoration(
           filled: true,
           fillColor: fillColor,
@@ -62,8 +61,9 @@ class CustomTextFormField extends StatelessWidget {
           ),
           focusColor: focusColor,
           prefixIcon: perfixicon != null ? Icon(perfixicon) : null,
-          prefixStyle: TextStyle(color:prefixColor),
+          prefixStyle: TextStyle(color: prefixColor),
           suffixIcon: IconButton(
+              color: Colors.black,
               onPressed: suffixpressed,
               icon: suffixicon != null ? Icon(suffixicon) : Icon(suffixicon))),
       onFieldSubmitted: onsubmitted,

@@ -5,6 +5,7 @@ import 'package:quizapp/pages/available_players/widgets/available_players_view.d
 import 'package:quizapp/pages/friend_reqeuest/friend_request_view.dart';
 import 'package:quizapp/pages/onboarding/on_boarding_one/on_boarding_one_view.dart';
 import 'package:quizapp/pages/onboarding/onboarding_2/onboarding_view.dart';
+import 'package:quizapp/pages/paymentpage/paymentpage.dart';
 import 'package:quizapp/utilites/appcolors.dart';
 
 void main() {
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: AppColor.primary,
         ),
       ),
-      home: const FriendRequestView(),
+      home: const OnBoardingView(),
     );
   }
 }

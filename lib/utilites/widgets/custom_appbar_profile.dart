@@ -4,9 +4,11 @@ import '../appcolors.dart';
 import '../styles.dart';
 
 class CustomAppbar extends StatelessWidget {
-  const CustomAppbar({Key? key, required this.text}) : super(key: key);
+  const CustomAppbar({Key? key, required this.text, required this.icon, this.onPressed}) : super(key: key);
 
   final String text;
+  final IconData icon;
+  final void Function ()? onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -15,13 +17,8 @@ class CustomAppbar extends StatelessWidget {
       child: Row(
         children: [
           IconButton(
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-            icon: const Icon(
-              Icons.arrow_back_ios,
-              color: AppColor.whiteColor,
-            ),
+            onPressed:onPressed,
+            icon: Icon(icon,color: AppColor.whiteColor,),
           ),
           const SizedBox(width: 80,),
 

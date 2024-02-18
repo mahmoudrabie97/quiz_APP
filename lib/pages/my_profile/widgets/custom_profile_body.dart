@@ -14,11 +14,13 @@ class CustomProfileBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: ListView(
-      children: const [
+      children:  [
         Column(
           children: [
             CustomAppbar(
-              text: 'My Profile',
+              text: 'My Profile', icon: Icons.arrow_back_ios,onPressed: (){
+                Navigator.pop(context);
+                },
             ),
             CustomMainProfileContainer(),
           ],

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:quizapp/pages/add_friends/add_friends.dart';
+import 'package:quizapp/pages/available_players/widgets/available_players_view.dart';
 import 'package:quizapp/pages/onboarding/on_boarding_one/on_boarding_one_view.dart';
+import 'package:quizapp/pages/onboarding/onboarding_2/onboarding_view.dart';
 import 'package:quizapp/utilites/appcolors.dart';
 
 void main() {
@@ -21,7 +24,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: AppColor.primary,
         ),
       ),
-      home: const OnBoardingOneView(),
+      home: const OnBoardingView(),
     );
   }
 }

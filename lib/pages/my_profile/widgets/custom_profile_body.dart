@@ -17,7 +17,7 @@ class CustomProfileBody extends StatelessWidget {
       children: const [
         Column(
           children: [
-            CustomAppbarProfile(
+            CustomAppbar(
               text: 'My Profile',
             ),
             CustomMainProfileContainer(),

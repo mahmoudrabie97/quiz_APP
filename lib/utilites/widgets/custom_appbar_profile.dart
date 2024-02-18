@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../appcolors.dart';
 import '../styles.dart';
 
-class CustomAppbarProfile extends StatelessWidget {
-  const CustomAppbarProfile({Key? key, required this.text}) : super(key: key);
+class CustomAppbar extends StatelessWidget {
+  const CustomAppbar({Key? key, required this.text}) : super(key: key);
 
   final String text;
 

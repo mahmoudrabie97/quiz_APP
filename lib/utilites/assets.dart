@@ -25,5 +25,8 @@ class AssetsData{
   static const sport1 = 'assets/images/sports (1).png';
   static const deadline = 'assets/images/deadline 1.png';
   static const graduation = 'assets/images/graduation-hat.png';
+  static const visa = 'assets/images/visa.png';
+  static const payPal = 'assets/images/paypal.png';
+  static const apple = 'assets/images/apple-logo (1) 1.png';
 
 }

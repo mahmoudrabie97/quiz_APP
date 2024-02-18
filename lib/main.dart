@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:quizapp/pages/my_wallet/my_walletpage.dart';
 import 'package:quizapp/pages/add_friends/add_friends.dart';
 import 'package:quizapp/pages/available_players/widgets/available_players_view.dart';
+import 'package:quizapp/pages/friend_reqeuest/friend_request_view.dart';
 import 'package:quizapp/pages/onboarding/on_boarding_one/on_boarding_one_view.dart';
 import 'package:quizapp/pages/onboarding/onboarding_2/onboarding_view.dart';
 import 'package:quizapp/utilites/appcolors.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: AppColor.primary,
         ),
       ),
-      home: const OnBoardingView(),
+      home: const FriendRequestView(),
     );
   }
 }

@@ -12,7 +12,10 @@ class CustomAddFriendsBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: [
-        CustomAppbar(text: 'Add Friends',),
+        CustomAppbar(text: 'Add Friends', icon: Icons.arrow_back_ios,
+          onPressed: () {
+            Navigator.pop(context);
+          },),
         CustomAddFriendsMainContainer(),
       ],
     );

@@ -8,10 +8,16 @@ class CustomEditProfileBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  SingleChildScrollView(
+    return SingleChildScrollView(
       child: Column(
         children: [
-         CustomAppbar(text: 'Edit Profile'),
+          CustomAppbar(
+            text: 'Edit Profile',
+            icon: Icons.arrow_back_ios,
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          ),
           CustomMainContainerEditProfle(),
         ],
       ),

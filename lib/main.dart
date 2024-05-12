@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: AppColor.primary,
         ),
       ),
-      home: const OnBoardingView(),
+      home: const OnBoardingOneView(),
     );
   }
 }

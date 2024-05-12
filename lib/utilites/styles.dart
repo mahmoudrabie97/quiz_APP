@@ -31,4 +31,8 @@ class Styles {
   TextStyle(fontSize: 28, color: Colors.white, fontWeight: FontWeight.w500);
   static const style30=
   TextStyle(fontSize: 30, color:  Color(0xff001833), fontWeight: FontWeight.w500);
+  static const style12=
+  TextStyle(fontSize: 13, color:  Color(0xff3498DB), fontWeight: FontWeight.w900);
+  static const style11=
+  TextStyle(fontSize: 11, color:  Color(0xff34B4FF), fontWeight: FontWeight.w300);
 }

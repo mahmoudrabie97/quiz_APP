@@ -22,40 +22,57 @@ class CustomOnBoardingOneBody extends StatelessWidget {
           color: AppColor.whiteColor,
           borderRadius: BorderRadius.circular(20),
         ),
-        child: Column(
-          children: [
-            Padding(
-              padding:
-                  EdgeInsets.only(top: 120, bottom: 25, left: 12, right: 12),
-              child: Text(
-                'What type of account will you open ?',
-                style: Styles.style30,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const Padding(
+                padding:
+                    EdgeInsets.only(top: 120, bottom: 25, left: 12, right: 12),
+                child: Text(
+                  'Login As',
+                  style: Styles.style30,
+                ),
               ),
-            ),
-            GestureDetector(
-              onTap: () {
-                context.push(OnBoardingView());
-              },
-              child: CustomOnBoardingSmallContainer(
-                color: AppColor.primary,
-                image: AssetsData.student,
-                text: 'Student',
+              GestureDetector(
+                onTap: () {
+                  context.push(const OnBoardingView());
+                },
+                child: const CustomOnBoardingSmallContainer(
+                  color: AppColor.primary,
+                  image: AssetsData.student,
+                  text: 'Student',
+                ),
               ),
-            ),
-            SizedBox(
-              height: 18,
-            ),
-            GestureDetector(
-              onTap: () {
-                context.push(OnBoardingView());
-              },
-              child: CustomOnBoardingSmallContainer(
-                color: AppColor.lightGreenColor,
-                image: AssetsData.father,
-                text: 'Father',
+              const SizedBox(
+                height: 18,
               ),
-            ),
-          ],
+              GestureDetector(
+                onTap: () {
+                  context.push(const OnBoardingView());
+                },
+                child: const CustomOnBoardingSmallContainer(
+                  color: AppColor.greenColor,
+                  image: AssetsData.parent,
+                  text: 'Parent',
+                ),
+              ),
+              const SizedBox(
+                height: 18,
+              ),
+              GestureDetector(
+                onTap: () {
+                  context.push(const OnBoardingView());
+                },
+                child: const CustomOnBoardingSmallContainer(
+                  color: AppColor.pink,
+                  image: AssetsData.father,
+                  text: 'Teacher',
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

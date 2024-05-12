@@ -1,4 +1,4 @@
-class AssetsData{
+class AssetsData {
   static const login = 'assets/images/Login.png';
   static const onBoarding = 'assets/images/onboarding.png';
   static const signUp = 'assets/images/signUp.png';
@@ -28,5 +28,5 @@ class AssetsData{
   static const visa = 'assets/images/visa.png';
   static const payPal = 'assets/images/paypal.png';
   static const apple = 'assets/images/apple-logo (1) 1.png';
-
+  static const parent = 'assets/images/parent.png';
 }

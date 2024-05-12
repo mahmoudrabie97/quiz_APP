@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:quizapp/utilites/appcolors.dart';
+import 'package:quizapp/utilites/assets.dart';
 import 'package:quizapp/utilites/widgets/customtext.dart';
 
 class CustomPointContainer extends StatelessWidget {
@@ -13,7 +15,7 @@ class CustomPointContainer extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height * .12,
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: AppColor.pink,
           borderRadius: BorderRadius.circular(14),
         ),
         child: Padding(
@@ -31,10 +33,10 @@ class CustomPointContainer extends StatelessWidget {
                   const Column(
                     children: [
                       CustomText(
-                        text: '214 th Rank',
-                        color: Colors.grey,
+                        text: ' 214 th Rank',
+                        color: Colors.white,
                       ),
-                      CustomText(text: '787 pt'),
+                      CustomText(text: '787 pt',  color: Colors.white,),
                     ],
                   )
                 ],
@@ -43,8 +45,8 @@ class CustomPointContainer extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Image.asset(
-                    'assets/svg/medal 1.png',
-                    width: 40,
+                    AssetsData.dollar,
+
                   ),
                   const SizedBox(
                     width: 20,
@@ -53,9 +55,9 @@ class CustomPointContainer extends StatelessWidget {
                     children: [
                       CustomText(
                         text: 'Reward Points',
-                        color: Colors.grey,
+                        color: Colors.white,
                       ),
-                      CustomText(text: '1234'),
+                      CustomText(text: '1234' , color: Colors.white,),
                     ],
                   )
                 ],

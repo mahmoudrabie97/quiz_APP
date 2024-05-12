@@ -28,5 +28,8 @@ class AssetsData{
   static const visa = 'assets/images/visa.png';
   static const payPal = 'assets/images/paypal.png';
   static const apple = 'assets/images/apple-logo (1) 1.png';
+  static const imageRight = 'assets/images/image_right.png';
+  static const imageLeft = 'assets/images/image_left.png';
+
 
 }

@@ -3,6 +3,9 @@ import 'package:quizapp/pages/home_quize_page/widgets/customcontainermode.dart';
 import 'package:quizapp/pages/home_quize_page/widgets/smallcontainermode.dart';
 import 'package:quizapp/utilites/appcolors.dart';
 import 'package:quizapp/utilites/assets.dart';
+import 'package:quizapp/utilites/extentionhelper.dart';
+
+import '../../random_quize/random_quize_page.dart';
 
 class CustomCategriesItem extends StatelessWidget {
   const CustomCategriesItem({
@@ -16,15 +19,20 @@ class CustomCategriesItem extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CustomerContainerMode(
-            modecolor: const Color(0xffC2B7FF),
-            starttext: 'Start',
-            modetext2: '',
-            modetext: 'RandomQuiz',
-            imagestring: AssetsData.choose,
-            contaunerheight: MediaQuery.of(context).size.height * .38,
-            containerwidth: 220,
-            isremaintext: true,
+          GestureDetector(
+            onTap: (){
+              context.push(RandomQuizePage());
+            },
+            child: CustomerContainerMode(
+              modecolor: const Color(0xffC2B7FF),
+              starttext: 'Start',
+              modetext2: '',
+              modetext: 'RandomQuiz',
+              imagestring: AssetsData.choose,
+              contaunerheight: MediaQuery.of(context).size.height * .38,
+              containerwidth: 220,
+              isremaintext: true,
+            ),
           ),
           SizedBox(
             width: 15,

@@ -35,4 +35,6 @@ class Styles {
   TextStyle(fontSize: 13, color:  Color(0xff3498DB), fontWeight: FontWeight.w900);
   static const style11=
   TextStyle(fontSize: 11, color:  Color(0xff34B4FF), fontWeight: FontWeight.w300);
+  static const style10=
+  TextStyle(fontSize: 13, color:  Colors.white, fontWeight: FontWeight.w400);
 }

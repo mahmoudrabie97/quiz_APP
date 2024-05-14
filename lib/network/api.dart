@@ -9,7 +9,8 @@ class CallApi {
   static String msg = '';
 
   static Future<http.Response?> postData(
-      {required Map data,
+      {
+        required Map data,
       required String baseUrl,
       required String apiUrl,
       required Map<String, String> headers,
@@ -19,8 +20,10 @@ class CallApi {
       var fullUrl = baseUrl + apiUrl;
       var jsonData = jsonEncode(data);
 
+
       return await http.post(Uri.parse(fullUrl),
           body: jsonData, headers: headers);
+
     } on IOException catch (e) {
       debugPrint('Socket Error: $e');
       msg = 'Socket Error: $e';
@@ -70,7 +73,7 @@ class CallApi {
       debugPrint(msg);
       ShowMyDialog.showMsg(context, msg);
     }
-    return null;
+     return null;
   }
 
   static _setHeaders() => {'Content-Type': 'application/x-www-form-urlencoded'};

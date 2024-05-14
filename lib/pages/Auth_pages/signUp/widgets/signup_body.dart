@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:quizapp/cubit/Auth_cubit/register_cubit.dart';
 import 'package:quizapp/utilites/assets.dart';
 
 import 'custom_container_signup.dart';
@@ -17,7 +19,9 @@ class SignUpBody extends StatelessWidget {
               width: MediaQuery.of(context).size.width * .5,
               height: MediaQuery.of(context).size.height * .24,
             ),
-             CustomContainerSignUp(),
+             BlocProvider(
+               create: (context)=>RegisterCubit(),
+                 child: CustomContainerSignUp()),
           ],
         ),
       ],

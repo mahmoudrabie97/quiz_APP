@@ -8,7 +8,8 @@ class CallApi {
   static String msg = '';
 
   static Future<http.Response?> postData(
-      {required Map data,
+      {
+        required Map data,
       required String baseUrl,
       required String apiUrl,
       required Map<String, String> headers,
@@ -16,6 +17,7 @@ class CallApi {
     try {
       msg = '';
       var fullUrl = baseUrl + apiUrl;
+
 
       return await http.post(Uri.parse(fullUrl), body: data, headers: headers);
     } on IOException catch (e) {
@@ -67,7 +69,7 @@ class CallApi {
       debugPrint(msg);
       ShowMyDialog.showMsg(context, msg);
     }
-    return null;
+     return null;
   }
 
   static _setHeaders() => {'Content-Type': 'application/x-www-form-urlencoded'};

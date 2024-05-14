@@ -6,6 +6,7 @@ import 'package:quizapp/utilites/assets.dart';
 
 import '../../../../utilites/appcolors.dart';
 import '../../../../utilites/widgets/custombutton.dart';
+import '../../../Auth_pages/signUp/signup_view.dart';
 
 class CustomContainerOnBoarding extends StatelessWidget {
   const CustomContainerOnBoarding({Key? key}) : super(key: key);
@@ -54,7 +55,10 @@ class CustomContainerOnBoarding extends StatelessWidget {
             ),
             CustomButton(
               buttonText: 'Create an account',
-              onPressed: () {},
+              onPressed: () {
+                context.push(SignUpView());
+
+              },
               txtColor: AppColor.primary,
               buttonColor: AppColor.greyColor,
             ),

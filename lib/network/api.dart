@@ -22,9 +22,9 @@ class CallApi {
 
 
 
-
       return await http.post(Uri.parse(fullUrl),
           body: jsonData, headers: headers);
+
     } on IOException catch (e) {
       debugPrint('Socket Error: $e');
       msg = 'Socket Error: $e';

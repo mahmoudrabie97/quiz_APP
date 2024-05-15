@@ -67,11 +67,12 @@ class CustomContainerSignUp extends StatelessWidget {
                   perfixicon: Icons.person_2_outlined,
                   validator: (value) {
                     if (value!.isEmpty) {
-                      return 'please re enter your password';
-                    } else if (_passwordController.text !=
-                        _passwordconfirmationController.text) {
-                      return 'two passwords not agree';
+                      return 'please re enter your name';
                     }
+                    // else if (_passwordController.text !=
+                    //     _passwordconfirmationController.text) {
+                    //   return 'two passwords not agree';
+                    // }
 
                     return null;
                   },
@@ -85,11 +86,12 @@ class CustomContainerSignUp extends StatelessWidget {
                   perfixicon: Icons.email_outlined,
                   validator: (value) {
                     if (value!.isEmpty) {
-                      return 'please re enter your password';
-                    } else if (_passwordController.text !=
-                        _passwordconfirmationController.text) {
-                      return 'two passwords not agree';
+                      return 'please re enter your Email';
                     }
+                    // else if (_passwordController.text !=
+                    //     _passwordconfirmationController.text) {
+                    //   return 'two passwords not agree';
+                    // }
 
                     return null;
                   },
@@ -104,10 +106,11 @@ class CustomContainerSignUp extends StatelessWidget {
                   validator: (value) {
                     if (value!.isEmpty) {
                       return 'please re enter your password';
-                    } else if (_passwordController.text !=
-                        _passwordconfirmationController.text) {
-                      return 'two passwords not agree';
                     }
+                    // else if (_passwordController.text !=
+                    //     _passwordconfirmationController.text) {
+                    //   return 'two passwords not agree';
+                    // }
 
                     return null;
                   },
@@ -139,11 +142,12 @@ class CustomContainerSignUp extends StatelessWidget {
                   perfixicon: Icons.lock_outline_rounded,
                   validator: (value) {
                     if (value!.isEmpty) {
-                      return 'please re enter your password';
-                    } else if (_passwordController.text !=
-                        _passwordconfirmationController.text) {
-                      return 'two passwords not agree';
+                      return 'please re enter your phone number';
                     }
+                    // else if (_passwordController.text !=
+                    //     _passwordconfirmationController.text) {
+                    //   return 'two passwords not agree';
+                    // }
 
                     return null;
                   },

@@ -31,6 +31,10 @@ class CustomContainerSignUp extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocConsumer<RegisterCubit, RegisterStates>(
         listener: (BuildContext context, state) {
+          if(state is RegisterSuccessState)
+            {
+              context.push(LoginView());
+            }
     },
         builder: (BuildContext context,  state) {
       return Container(
@@ -42,135 +46,148 @@ class CustomContainerSignUp extends StatelessWidget {
         ),
         child: Padding(
           padding: const EdgeInsets.all(12.0),
-          child: Column(
-            children: [
-              const Text(
-                'Sign Up',
-                style: Styles.style24,
-              ),
-              Text(
-                ' create a new account',
-                style: Styles.style16.copyWith(color: Color(0xff9098B1)),
-              ),
-              const SizedBox(
-                height: 15,
-              ),
-              CustomTextFormField(
-                controller: _nameController,
-                hintText: 'Full Name',
-                perfixicon: Icons.person_2_outlined,
-                validator: (value) {
-                  if (value!.isEmpty) {
-                    return 'please re enter your password';
-                  } else if (_passwordController.text !=
-                      _passwordconfirmationController.text) {
-                    return 'two passwords not agree';
-                  }
+          child: Form(
+            key: formkey,
+            child: ListView(
+              children: [
+                const Text(
+                  'Sign Up',
+                  style: Styles.style24,
+                ),
+                Text(
+                  ' create a new account',
+                  style: Styles.style16.copyWith(color: Color(0xff9098B1)),
+                ),
+                const SizedBox(
+                  height: 15,
+                ),
+                CustomTextFormField(
+                  controller: _nameController,
+                  hintText: 'Full Name',
+                  perfixicon: Icons.person_2_outlined,
+                  validator: (value) {
+                    if (value!.isEmpty) {
+                      return 'please re enter your password';
+                    } else if (_passwordController.text !=
+                        _passwordconfirmationController.text) {
+                      return 'two passwords not agree';
+                    }
 
-                  return null;
-                },
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              CustomTextFormField(
-                controller: _emailController,
-                hintText: 'Email',
-                perfixicon: Icons.email_outlined,
-                validator: (value) {
-                  if (value!.isEmpty) {
-                    return 'please re enter your password';
-                  } else if (_passwordController.text !=
-                      _passwordconfirmationController.text) {
-                    return 'two passwords not agree';
-                  }
+                    return null;
+                  },
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                CustomTextFormField(
+                  controller: _emailController,
+                  hintText: 'Email',
+                  perfixicon: Icons.email_outlined,
+                  validator: (value) {
+                    if (value!.isEmpty) {
+                      return 'please re enter your password';
+                    } else if (_passwordController.text !=
+                        _passwordconfirmationController.text) {
+                      return 'two passwords not agree';
+                    }
 
-                  return null;
-                },
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              CustomTextFormField(
-                controller: _passwordController,
-                hintText: 'Password',
-                perfixicon: Icons.lock_outline_rounded,
-                validator: (value) {
-                  if (value!.isEmpty) {
-                    return 'please re enter your password';
-                  } else if (_passwordController.text !=
-                      _passwordconfirmationController.text) {
-                    return 'two passwords not agree';
-                  }
+                    return null;
+                  },
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                CustomTextFormField(
+                  controller: _passwordController,
+                  hintText: 'Password',
+                  perfixicon: Icons.lock_outline_rounded,
+                  validator: (value) {
+                    if (value!.isEmpty) {
+                      return 'please re enter your password';
+                    } else if (_passwordController.text !=
+                        _passwordconfirmationController.text) {
+                      return 'two passwords not agree';
+                    }
 
-                  return null;
-                },
-              ),
-              // const SizedBox(
-              //   height: 10,
-              // ),
-              // CustomTextFormField(
-              //   controller: _passwordconfirmationController,
-              //   hintText: 'Confirm Password',
-              //   perfixicon: Icons.lock_outline_rounded,
-              //   validator: (value) {
-              //     if (value!.isEmpty) {
-              //       return 'please re enter your password';
-              //     } else if (_passwordController.text !=
-              //         _passwordconfirmationController.text) {
-              //       return 'two passwords not agree';
-              //     }
-              //
-              //     return null;
-              //   },
-              // ),
-              // const SizedBox(
-              //   height: 10,
-              // ),
-              CustomTextFormField(
-                controller: _phoneNumberNController,
-                hintText: 'phone number',
-                perfixicon: Icons.lock_outline_rounded,
-                validator: (value) {
-                  if (value!.isEmpty) {
-                    return 'please re enter your password';
-                  } else if (_passwordController.text !=
-                      _passwordconfirmationController.text) {
-                    return 'two passwords not agree';
-                  }
+                    return null;
+                  },
+                ),
+                // const SizedBox(
+                //   height: 10,
+                // ),
+                // CustomTextFormField(
+                //   controller: _passwordconfirmationController,
+                //   hintText: 'Confirm Password',
+                //   perfixicon: Icons.lock_outline_rounded,
+                //   validator: (value) {
+                //     if (value!.isEmpty) {
+                //       return 'please re enter your password';
+                //     } else if (_passwordController.text !=
+                //         _passwordconfirmationController.text) {
+                //       return 'two passwords not agree';
+                //     }
+                //
+                //     return null;
+                //   },
+                // ),
+                // const SizedBox(
+                //   height: 10,
+                // ),
+                CustomTextFormField(
+                  controller: _phoneNumberNController,
+                  hintText: 'phone number',
+                  perfixicon: Icons.lock_outline_rounded,
+                  validator: (value) {
+                    if (value!.isEmpty) {
+                      return 'please re enter your password';
+                    } else if (_passwordController.text !=
+                        _passwordconfirmationController.text) {
+                      return 'two passwords not agree';
+                    }
 
-                  return null;
-                },
-              ),
-              CustomButton(
-                buttonText: 'Sign up ',
-                onPressed: () {
-        // context.push(LoginView());
-                  RegisterCubit.get(context).registerUser(userdata: {
-                    "name": _nameController.text,
-                    "username": _nameController.text,
-                    "email": _emailController.text,
-                    "password": _passwordController.text,
-                    "phoneNumber": _phoneNumberNController.text,
-                  }, context: context);
-                },
-                txtColor: AppColor.whiteColor,
-                buttonColor: AppColor.primary,
-              ),
-              const SizedBox(
-                height: 10,
-              ),
+                    return null;
+                  },
+                ),
+                state is RegisterLoadingState
+                    ? const Center(
+                  child: CircularProgressIndicator(),
+                )
+                    :
+                CustomButton(
+                  buttonText: 'Sign up ',
+                  onPressed: () {
+                    // context.push(LoginView());
+                    if (formkey.currentState!.validate()) {
+            RegisterCubit.get(context).registerUser(
+              userdata: {
+                "name": _nameController.text,
+                "username": _nameController.text,
+                "email": _emailController.text,
+                "password": _passwordController.text,
+                "phoneNumber": _phoneNumberNController.text,
+              }, context: context,
+            );
+                    }
+
+                  },
+                  txtColor: AppColor.whiteColor,
+                  buttonColor: AppColor.primary,
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
 
 
-              const SizedBox(
-                height: 10,
-              ),
-              const Padding(
-                padding: EdgeInsets.only(left: 50),
-                child: CustomRowSignUp(),
-              ),
-              // CustomTextFormField(hintText: 'Full Name',perfixicon: Icons.person_2_outlined),
-            ],
+                const SizedBox(
+                  height: 10,
+                ),
+                const Padding(
+                  padding: EdgeInsets.only(left: 50),
+                  child: CustomRowSignUp(),
+                ),
+                // CustomTextFormField(hintText: 'Full Name',perfixicon: Icons.person_2_outlined),
+              ],
+            ),
           ),
         ),
       );

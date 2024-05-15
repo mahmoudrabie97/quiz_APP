@@ -19,6 +19,9 @@ class Styles {
 
   static const style13=
   TextStyle(fontSize: 14, color: AppColor.primary, fontWeight: FontWeight.w600);
+  static const style400=
+  TextStyle(fontSize: 16, color: Color(0xff9F9F9F), fontWeight: FontWeight.w400);
+
 
   static const style19=
   TextStyle(fontSize: 18, color: Color(0xff001833), fontWeight: FontWeight.w500);

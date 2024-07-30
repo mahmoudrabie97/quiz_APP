@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:quizapp/cubit/Auth_cubit/login_cubit.dart';
+import 'package:quizapp/cubit/Auth_cubit/login_states.dart';
 import 'package:quizapp/pages/Auth_pages/loginpage/widgets/animated_text_widget.dart';
 import 'package:quizapp/pages/Auth_pages/signUp/signup_view.dart';
 import 'package:quizapp/pages/home_quize_page/root_homepage.dart';
@@ -101,26 +102,30 @@ class CustomContainerLogin extends StatelessWidget {
                   //       )
                   //     :
 
-                  Padding(
-                    padding: const EdgeInsets.only(left: 10, right: 10),
-                    child: CustomButton(
-                      buttonText: 'Login',
-                      onPressed: () {
-                        if (formkey.currentState!.validate()) {
-                          Map userdata = {
-                            "email": _emailController.text,
-                            "password": _passwordController.text,
-                          };
-                          LoginCubit.get(context)
-                              .loginUser(userdata: userdata, context: context);
-                        }
-                        context.push(RootHomePage());
-                        // if (formkey.currentState!.validate()) {}
-                      },
-                      buttonColor: AppColor.primary,
-                      borderRadius: 12,
-                    ),
-                  ),
+                  LoginCubit.get(context).state is LoginLoadingState
+                      ? const Center(
+                          child: CircularProgressIndicator(),
+                        )
+                      : Padding(
+                          padding: const EdgeInsets.only(left: 10, right: 10),
+                          child: CustomButton(
+                            buttonText: 'Login',
+                            onPressed: () {
+                              if (formkey.currentState!.validate()) {
+                                Map userdata = {
+                                  "email": _emailController.text,
+                                  "password": _passwordController.text,
+                                };
+                                LoginCubit.get(context).loginUser(
+                                    userdata: userdata, context: context);
+                              }
+
+                              // if (formkey.currentState!.validate()) {}
+                            },
+                            buttonColor: AppColor.primary,
+                            borderRadius: 12,
+                          ),
+                        ),
                   GestureDetector(
                     onTap: () {},
                     child: const CustomText(
@@ -140,7 +145,7 @@ class CustomContainerLogin extends StatelessWidget {
                       ),
                       GestureDetector(
                         onTap: () {
-                          context.push(SignUpView());
+                          context.push(const SignUpView());
                         },
                         child: const CustomText(
                           text: 'Sign up',

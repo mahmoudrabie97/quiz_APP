@@ -6,6 +6,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:quizapp/cubit/Auth_cubit/login_states.dart';
 import 'package:quizapp/network/api.dart';
 import 'package:quizapp/network/login_endpoint.dart';
+import 'package:quizapp/pages/home_quize_page/root_homepage.dart';
+import 'package:quizapp/utilites/extentionhelper.dart';
 import 'package:quizapp/utilites/widgets/showdialog.dart';
 
 class LoginCubit extends Cubit<LoginStates> {
@@ -51,6 +53,7 @@ class LoginCubit extends Cubit<LoginStates> {
         //debugPrint(value.body);
         final responseBody = json.decode(value.body);
         print(responseBody);
+        context.push(RootHomePage());
 
         //AppConstant.token = userModel!.accessToken;
 
